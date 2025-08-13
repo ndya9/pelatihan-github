@@ -1,0 +1,246 @@
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        nav {
+            background: #FFF2F4;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ca3c68;
+            font-family: 'Georgia', serif;
+        }
+
+        .logo span {
+            font-size: 12px;
+            display: block;
+            color: #555;
+            margin-top: -5px;
+        }
+
+        .nav-link {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-link a {
+            text-decoration: none;
+            color: #5c5c5c;
+            font-weight: 500;
+        }
+
+        .search-box input {
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            padding: 4px 15px;
+            width: 150px;
+        }
+
+
+        .cart-page {
+            padding: 40px 0;
+            background-color: var(--background-light);
+            min-height: calc(100vh - 100px);
+            /* Adjust to push footer down, approx. header height */
+            display: flex;
+            /* Use flexbox for cart page content */
+            flex-direction: column;
+            /* Stack content vertically */
+            align-items: center;
+            /* Center content horizontally */
+        }
+
+        .cart-item {
+            display: flex;
+            /* Arrange items horizontally */
+            align-items: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            margin-bottom: 20px;
+            /* Space between cart items */
+            width: 100%;
+            /* Take full width of container */
+            max-width: 800px;
+            /* Max width for cart item card */
+            gap: 20px;
+            /* Space between image, details, and quantity */
+        }
+
+        .cart-item-image {
+            flex-shrink: 0;
+            /* Prevent image from shrinking */
+            width: 120px;
+            /* Fixed width for cart item image */
+            height: 120px;
+            /* Fixed height for cart item image */
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .cart-item-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Cover the area, cropping if needed */
+            display: block;
+        }
+
+        .cart-item-details {
+            flex-grow: 1;
+            /* Allow details section to take available space */
+        }
+
+        .cart-item-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-color-dark);
+            margin-bottom: 5px;
+        }
+
+        .cart-item-category {
+            font-size: 14px;
+            color: var(--text-color-light);
+            margin-bottom: 10px;
+        }
+
+        .cart-item-price {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+
+        /* Reusing and adjusting quantity selector styles */
+        .quantity-selector-small {
+            display: flex;
+            align-items: center;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            width: fit-content;
+            overflow: hidden;
+            /* Adjust size for cart page */
+            font-size: 14px;
+            /* Smaller font for quantity display */
+        }
+
+        .quantity-selector-small .qty-btn {
+            padding: 8px 12px;
+            /* Smaller padding */
+            font-size: 16px;
+            /* Smaller button font */
+        }
+
+        .quantity-selector-small .qty-display {
+            padding: 8px 15px;
+            /* Smaller padding */
+            font-size: 16px;
+            /* Smaller display font */
+        }
+
+        /* Optional: Total/Summary section styles */
+        .cart-summary {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 800px;
+            text-align: right;
+        }
+
+        .cart-summary p {
+            font-size: 16px;
+            color: var(--text-color-dark);
+            margin-bottom: 5px;
+        }
+
+        .cart-summary .total-price {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-top: 15px;
+        }
+
+        .cart-actions {
+            margin-top: 30px;
+            width: 100%;
+            max-width: 800px;
+            /* Align with cart item max-width */
+            text-align: right;
+            /* Align checkout button to the right */
+        }
+
+        /* Adjust button size for cart page if needed */
+        .cart-actions .btn-checkout {
+            padding: 15px 40px;
+            /* Make checkout button larger */
+            font-size: 18px;
+        }
+
+        /* RESPONSIVE ADJUSTMENTS for Cart Page */
+        @media (max-width: 768px) {
+            .cart-item {
+                flex-direction: column;
+                /* Stack image and details vertically */
+                text-align: center;
+                padding: 15px;
+                gap: 15px;
+            }
+
+            .cart-item-image {
+                width: 100px;
+                /* Make image slightly smaller when stacked */
+                height: 100px;
+            }
+
+            .cart-item-details {
+                width: 100%;
+                /* Take full width */
+            }
+
+            .cart-item-quantity {
+                width: 100%;
+                /* Ensure quantity selector is centered if needed */
+                display: flex;
+                justify-content: center;
+            }
+
+            .cart-actions {
+                text-align: center;
+                /* Center checkout button on small screens */
+            }
+
+            .cart-actions .btn-checkout {
+                width: 100%;
+                /* Make button full width on small screens */
+                max-width: 300px;
+                /* Limit button width */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cart-item {
+                padding: 10px;
+            }
+
+            .cart-item-title {
+                font-size: 18px;
+            }
+
+            .cart-item-price {
+                font-size: 18px;
+            }
+        }

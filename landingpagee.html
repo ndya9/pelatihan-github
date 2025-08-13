@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Florist Lively</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #ffecf4, #fffbdb);
+        }
+
+        nav {
+            background: #FFF2F4;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ca3c68;
+            font-family: 'Georgia', serif;
+        }
+
+        .logo span {
+            font-size: 12px;
+            display: block;
+            color: #555;
+            margin-top: -5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #5c5c5c;
+            font-weight: 500;
+        }
+
+        .search-box input {
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            padding: 4px 15px;
+            width: 150px;
+        }
+
+        .login-btn {
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 4px 15px;
+            background-color: white;
+            font-weight: 500;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            margin-top: -20px;
+        }
+
+        .hero-text {
+            max-width: 900px;
+            text-align: justify;
+        }
+
+
+        .hero-text p {
+            margin-top: 20px;
+            color: #333;
+            text-align: justify;
+        }
+
+        .about-btn {
+            margin-top: 25px;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 30px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-weight: 500;
+            margin-left: 200px;
+        }
+
+        .hero-img img {
+            max-width: 900px;
+            height: auto;
+            align-items: center;
+            margin-top: -18px;
+            margin-left: 80px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-img {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a class="navbar-brand ms-2" href=""><img src="gambar/florist lively.png" alt="" width="100"></a>
+        </div>
+        <div class="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">KATEGORI <span class="dropdown-toggle"></span></a>
+            <div class="search-box">
+                <input type="text" placeholder="" />
+            </div>
+            <button class="login-btn">LOGIN</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <img src="gambar/florist.png" alt="">
+            <h3>
+                Ketika kata-kata terasa kurang, biarkan keindahan bunga mengambil alih. Kami hadir untuk membantu Anda
+                menyampaikan setiap nuansa emosi, dari kegembiraan yang meluap hingga ketenangan dalam kesedihan.
+                Temukan rangkaian bunga yang tepat untuk setiap kesempatan, dan biarkan keharuman serta warnanya
+                menciptakan kenangan yang abadi.
+            </h3>
+            <button class="about-btn">ABOUT US</button>
+        </div>
+        <div class="hero-img">
+            <img src="gambar/logo semua.png" alt="Florist Image" />
+        </div>
+    </section>
+
+    <section class="list" style="padding-top: 200px;">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="asset/Nara Set Series.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/Neo Blade Series.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/Onyx Set Series.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="produk">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <a href="login.html">
+                            <img src="gambar/produk1.png"
+                                style="width: 100%; height: 300px; object-fit: cover ; border-radius: 8px;" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title fs-3">Bucket Bunga Kupu Kupu</h4>
+                            <h6 class="text">Flower Bouqete</h6>
+                            <h5 class="text">Rp.156.000</Rp>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="gambar/produk1.png"
+                            style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title fs-3">Bucket Bunga Kupu Kupu</h5>
+                            <h6 class="text">Flower Bouqete</h6>
+                            <h5 class="text">Rp.156.000</Rp>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="gambar/produk1.png"
+                            style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title fs-3">Bucket Bunga Kupu Kupu</h5>
+                            <h6 class="text">Flower Bouqete</h6>
+                            <h5 class="text">Rp.156.000</Rp>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="gambar/produk1.png"
+                            style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title fs-3">Bucket Bunga Kupu Kupu</h5>
+                            <h6 class="text">Flower Bouqete</h6>
+                            <h5 class="text">Rp.156.000</Rp>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="gambar/produk1.png"
+                            style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title fs-3">Bucket Bunga Kupu Kupu</h5>
+                            <h6 class="text">Flower Bouqete</h6>
+                            <h5 class="text">Rp.156.000</Rp>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="gambar/produk1.png"
+                            style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title fs-3">Bucket Bunga Kupu Kupu</h5>
+                            <h6 class="text">Flower Bouqete</h6>
+                            <h5 class="text">Rp.156.000</Rp>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="gambar/produk1.png"
+                            style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title fs-3">Bucket Bunga Kupu Kupu</h5>
+                            <h6 class="text">Flower Bouqete</h6>
+                            <h5 class="text">Rp.156.000</Rp>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="gambar/produk1.png"
+                            style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title fs-3">Bucket Bunga Kupu Kupu</h5>
+                            <h6 class="text">Flower Bouqete</h6>
+                            <h5 class="text">Rp.156.000</Rp>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: rgb(255, 255, 255); padding: 40px 60px">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-md-3 text-center text-md-start mb-4 mb-md 0 ms-md-n4">
+                    <img src="gambar/logo.jpg" alt="" width="200">
+                </div>
+                <div class="col-md-3">
+                    <h4 class="footer-tittle">Nafigasi</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="home.html">Home</a></li>
+                        <li class="mb-2"><a href="home.html">Kategori</a></li>
+                        <li class="mb-2"><a href="home.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5><strong>Information</strong></h5>
+                    <p>+6200000</p>
+                    <p>livelyflorist@gmail.com</p>
+                </div>
+                <div class="col-md-3">
+                    <h5><strong>Social</strong></h5>
+                    <p><i class="fab fa-facebook"></i> Florist_lively</p>
+                    <p><i class="fab fa-instagram"></i> Florist_lively</p>
+                    <p><i class="fab fa-twitter"></i> Florist_lively</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+</html>
